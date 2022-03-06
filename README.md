@@ -6,7 +6,7 @@
 
 
 # Rules to run API Endpoints:
-1. (POST) https://runiontask.herokuapp.com//api/register
+1. (POST) https://runiontask.herokuapp.com/api/register
      INPUT: email,first_name, password
      
 2. (POST) https://runiontask.herokuapp.com/api/authenticate 
@@ -15,10 +15,10 @@
 
 Add JWT token to Header in Authorization in format 'Bearer {token}'
 
-4.(POST) https://runiontask.herokuapp.com//api/follow/{id}  
+4.(POST) https://runiontask.herokuapp.com/api/follow/{id}  
       - INPUT: id
 
-5.(POST) https://runiontask.herokuapp.com//api/unfollow/{id}  
+5.(POST) https://runiontask.herokuapp.com/api/unfollow/{id}  
       - INPUT: id
       
 6.(GET) https://runiontask.herokuapp.com/api/user
