@@ -1,6 +1,7 @@
 # Reuniontask
 
 ## Task Completed with all the given API Endpoints.
+## Test these endpoints on Postman.
 
 # API'S Hosted on :     https://runiontask.herokuapp.com/
 
