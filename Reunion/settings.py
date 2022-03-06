@@ -87,13 +87,15 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD':'1505',
-        'HOST': 'localhost',
+        'NAME': 'ddn1i5e9md7nu5',
+        'USER': 'cipfrfvulpgtus',
+        'PASSWORD':'7f027dac2cc71afe38d5647e64f2c46598aad8566a1337c7adfa03cc7878a694',
+        'HOST': 'ec2-3-232-111-230.compute-1.amazonaws.com',
+        'PORT':5432,
     }
 }
 
