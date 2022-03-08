@@ -74,7 +74,7 @@ class FollowView(viewsets.ViewSet):
         own_profile = Profile.objects.get(user=request.user)
         following_user = User.objects.get(id=pk)
         if following_user in own_profile.followings.all():
-            Response({'message':'You already follow this profile!!!'})
+            return Response({'message':'You already follow this profile!!!'})
         own_profile.followings.add(following_user)
         return Response({'message':'You are following now!!!'})
 
@@ -83,7 +83,7 @@ class FollowView(viewsets.ViewSet):
         own_profile = Profile.objects.get(user=request.user)
         following_user = User.objects.get(id=pk)
         if following_user not in own_profile.followings.all():
-            Response({'message':'You did not follow now!!!'})
+            return Response({'message':'You did not follow now!!!'})
         own_profile.followings.remove(following_user)
         return Response({'message':'You are unfollowing now!!!'})
 
